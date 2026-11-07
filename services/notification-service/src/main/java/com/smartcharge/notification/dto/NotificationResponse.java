@@ -24,3 +24,4 @@ public class NotificationResponse {
     private LocalDateTime createdAt;
     private LocalDateTime readAt;
 }
+

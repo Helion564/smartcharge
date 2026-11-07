@@ -60,3 +60,4 @@ public class Notification {
     @Column(name = "read_at")
     private LocalDateTime readAt;
 }
+

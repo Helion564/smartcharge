@@ -51,3 +51,4 @@ public class SessionDataPoint {
     @Column(name = "temperature")
     private double temperature;
 }
+

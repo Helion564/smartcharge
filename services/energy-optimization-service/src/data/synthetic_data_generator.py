@@ -59,3 +59,4 @@ def generate_synthetic_data(output_path: str = "./data/synthetic_sessions.csv", 
 
 if __name__ == "__main__":
     generate_synthetic_data()
+

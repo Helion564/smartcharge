@@ -17,3 +17,4 @@ def health_check():
         service="energy-optimization-service",
         version="1.0.0"
     )
+

@@ -13,3 +13,4 @@ public class StopSessionRequest {
     private String stopReason;
     private Double finalEnergyKwh;
 }
+

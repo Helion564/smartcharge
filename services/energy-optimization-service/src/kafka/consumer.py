@@ -50,3 +50,4 @@ class EnergyKafkaConsumer:
             consumer.close()
         except Exception as e:
             logger.warn(f"Kafka consumer could not connect to {self.settings.kafka_bootstrap_servers}: {e}")
+

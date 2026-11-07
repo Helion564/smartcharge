@@ -23,3 +23,4 @@ public class StartSessionRequest {
     private String vehicleRegistration;
     private Double pricePerKwh;
 }
+

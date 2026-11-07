@@ -149,3 +149,4 @@ class EnergyOptimizer:
         if power_kw <= 0:
             return 999.0
         return round((remaining_kwh / power_kw) * 60, 1)
+

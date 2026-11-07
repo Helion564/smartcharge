@@ -24,3 +24,4 @@ public class ActiveSessionResponse {
     private double stateOfCharge;
     private long durationMinutes;
 }
+

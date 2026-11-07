@@ -49,3 +49,4 @@ public class SessionResponse {
         private double temperature;
     }
 }
+

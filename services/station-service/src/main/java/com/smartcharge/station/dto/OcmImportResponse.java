@@ -15,3 +15,4 @@ public class OcmImportResponse {
     private int skippedCount;
     private String message;
 }
+

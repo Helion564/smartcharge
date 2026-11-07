@@ -23,3 +23,4 @@ export const STATUS_COLORS = {
   OUT_OF_ORDER: 'bg-red-500 text-white',
   RESERVED: 'bg-blue-500 text-white',
 }
+

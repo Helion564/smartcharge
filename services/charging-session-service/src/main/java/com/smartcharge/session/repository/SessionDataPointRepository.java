@@ -13,3 +13,4 @@ public interface SessionDataPointRepository extends JpaRepository<SessionDataPoi
 
     List<SessionDataPoint> findBySessionIdOrderByRecordedAtDesc(UUID sessionId, Pageable pageable);
 }
+

@@ -80,3 +80,4 @@ def get_carbon_savings(period_days: int = 30):
         petrol_saved_litres=petrol_litres,
         generated_at=datetime.now().isoformat()
     )
+

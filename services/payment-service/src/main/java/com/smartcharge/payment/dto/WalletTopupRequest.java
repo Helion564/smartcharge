@@ -21,3 +21,4 @@ public class WalletTopupRequest {
     @NotNull(message = "Payment method is required")
     private PaymentMethod paymentMethod;
 }
+

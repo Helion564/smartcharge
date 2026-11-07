@@ -21,3 +21,4 @@ public class ConnectorStatusEvent {
     private ConnectorStatus newStatus;
     private Instant timestamp;
 }
+

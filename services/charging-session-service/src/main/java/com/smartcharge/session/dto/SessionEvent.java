@@ -23,3 +23,4 @@ public class SessionEvent {
     private double totalCost;
     private Instant timestamp;
 }
+

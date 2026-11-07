@@ -106,3 +106,4 @@ public class ChargingSession {
         point.setSession(this);
     }
 }
+

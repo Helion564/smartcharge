@@ -16,3 +16,4 @@ public class NotificationSummary {
     private long unreadCount;
     private List<NotificationResponse> recentNotifications;
 }
+

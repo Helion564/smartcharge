@@ -20,3 +20,4 @@ public interface PaymentRepository extends JpaRepository<Payment, UUID> {
 
     Optional<Payment> findByTransactionId(String transactionId);
 }
+

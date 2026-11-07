@@ -72,3 +72,4 @@ public class BookingController {
         return ResponseEntity.ok(bookingService.getActiveBookingsForConnector(connectorId));
     }
 }
+

@@ -15,3 +15,4 @@ public class PaymentSummaryResponse {
     private double successRate;
     private double avgTransactionAmount;
 }
+

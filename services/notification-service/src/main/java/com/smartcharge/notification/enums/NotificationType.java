@@ -11,3 +11,4 @@ public enum NotificationType {
     LOW_WALLET_BALANCE,
     SYSTEM_ALERT
 }
+

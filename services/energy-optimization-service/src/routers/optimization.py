@@ -42,3 +42,4 @@ def get_current_optimization(station_id: str):
         "efficiency_score": 0.94,
         "active_controlled_sessions": 2
     }
+

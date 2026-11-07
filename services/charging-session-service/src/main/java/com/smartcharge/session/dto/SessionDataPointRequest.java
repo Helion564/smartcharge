@@ -17,3 +17,4 @@ public class SessionDataPointRequest {
     private double voltageVolts;
     private double temperature;
 }
+

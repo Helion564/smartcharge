@@ -18,3 +18,4 @@ public class StationAvailabilityResponse {
     private int availableConnectors;
     private List<ConnectorResponse> connectors;
 }
+

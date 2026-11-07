@@ -21,3 +21,4 @@ public interface ConnectorRepository extends JpaRepository<Connector, UUID> {
 
     Optional<Connector> findByConnectorCode(String connectorCode);
 }
+

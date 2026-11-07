@@ -59,3 +59,4 @@ export default function StationCard({ station, onSelect, isSelected }) {
     </div>
   )
 }
+

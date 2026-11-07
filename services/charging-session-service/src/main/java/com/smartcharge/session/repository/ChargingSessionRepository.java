@@ -22,3 +22,4 @@ public interface ChargingSessionRepository extends JpaRepository<ChargingSession
 
     List<ChargingSession> findByStatus(SessionStatus status);
 }
+

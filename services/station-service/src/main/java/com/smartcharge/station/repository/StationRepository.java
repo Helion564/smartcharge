@@ -39,3 +39,4 @@ public interface StationRepository extends JpaRepository<ChargingStation, UUID> 
             @Param("lng") double lng,
             @Param("radiusKm") double radiusKm);
 }
+
