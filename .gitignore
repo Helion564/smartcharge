@@ -1,0 +1,187 @@
+# ============================================================
+# SmartCharge Platform — Comprehensive .gitignore
+# ============================================================
+
+# ──────────────────────────────────────────
+# Java / Maven
+# ──────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+*.iml
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+# Maven local repo (if vendored)
+.m2/
+
+# ──────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTest
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# ──────────────────────────────────────────
+# Node.js / React
+# ──────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/
+.pnp.*
+.pnp.js
+
+# Build output
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/out/
+
+# Cache
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# ──────────────────────────────────────────
+# Docker
+# ──────────────────────────────────────────
+.docker/
+docker-compose.override.yml
+*.dockerignore
+
+# ──────────────────────────────────────────
+# Environment / Secrets
+# ──────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+secrets/
+
+# ──────────────────────────────────────────
+# IDE — IntelliJ IDEA
+# ──────────────────────────────────────────
+.idea/
+*.iws
+*.ipr
+out/
+
+# IDE — VS Code
+.vscode/
+*.code-workspace
+
+# IDE — Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+
+# IDE — NetBeans
+nbproject/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# IDE — STS / Spring Tools
+.sts4-cache/
+
+# ──────────────────────────────────────────
+# OS generated
+# ──────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ──────────────────────────────────────────
+# Logs & Monitoring data
+# ──────────────────────────────────────────
+logs/
+*.log
+*.log.*
+log/
+
+# Prometheus / Grafana persistent data
+monitoring/grafana/data/
+monitoring/prometheus/data/
+
+# ──────────────────────────────────────────
+# Test & Coverage
+# ──────────────────────────────────────────
+**/test-results/
+**/surefire-reports/
+**/failsafe-reports/
+jacoco.exec
+coverage/
+
+# ──────────────────────────────────────────
+# Miscellaneous
+# ──────────────────────────────────────────
+*.swp
+*.swo
+*~
+.sass-cache/
+.cache/
+tmp/
+temp/

@@ -1,0 +1,99 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      # Automatically create routes from Eureka registrations (lowercase service IDs)
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+      # Explicit routes take precedence over discovery locator
+      routes:
+        # ── User Service ──────────────────────────
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/auth/**, /api/v1/users/**
+
+        # ── Station Service ───────────────────────
+        - id: station-service
+          uri: lb://station-service
+          predicates:
+            - Path=/api/v1/stations/**
+
+        # ── Booking Service ───────────────────────
+        - id: booking-service
+          uri: lb://booking-service
+          predicates:
+            - Path=/api/v1/bookings/**
+
+        # ── Charging Session Service ──────────────
+        - id: charging-session-service
+          uri: lb://charging-session-service
+          predicates:
+            - Path=/api/v1/sessions/**
+
+        # ── Payment Service ───────────────────────
+        - id: payment-service
+          uri: lb://payment-service
+          predicates:
+            - Path=/api/v1/payments/**
+
+        # ── Notification Service ──────────────────
+        - id: notification-service
+          uri: lb://notification-service
+          predicates:
+            - Path=/api/v1/notifications/**
+
+        # ── Energy Optimization Service ───────────
+        - id: energy-service
+          uri: lb://energy-optimization-service
+          predicates:
+            - Path=/api/v1/energy/**
+
+      # Global CORS — tighten in production to specific origins
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "*"
+            allowed-methods: "*"
+            allowed-headers: "*"
+            allow-credentials: false
+            max-age: 3600
+
+# ── Eureka ────────────────────────────────────────────────
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+  instance:
+    prefer-ip-address: true
+
+# ── JWT ───────────────────────────────────────────────────
+jwt:
+  secret: ${JWT_SECRET}
+
+# ── Actuator & Metrics ────────────────────────────────────
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# ── Logging ───────────────────────────────────────────────
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
+    com.smartcharge.gateway: DEBUG
